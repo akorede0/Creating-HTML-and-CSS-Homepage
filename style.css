@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    font-size: 62.5%;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+}
+
+.wrapper{
+    background-image: url('./citi-bank.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no repeat;
+    height: 100vh;
+}
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: royalblue;
+    max-height: 5rem;
+}
+
+.home-nav ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nav-item a{
+   text-decoration: none;
+   color: black;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover, .nav-item a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    transition: underline 500ms linear;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 5rem);
+    padding: 1.5rem;
+}
+
+.container h1{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 5rem;
+    line-height: 45px;
+    color: rgb(214, 31, 175);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.container p{
+    font-size: 2rem;
+    color: #f0102e;
+    text-align: cen;
+    line-height: 24px;
+    width: 80%;
+}
+
+.learn-more{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: .8rem;
+    border: none;
+    box-shadow: 0 1px 3px 2px rgba(255, 255, 255, 0.5);
+    transition: all 200ms linear;
+    font-weight: 700;
+}
+
+.learn-more:hover{
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 80vh;
+}
+
+.about-content{
+    margin-left: 2rem;
+}
+
+.about-content h1{
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 30px;
+    text-align:  left;
+    margin-bottom: .5rem;
+}
+
+.about-content p{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 24px; 
+}
+
+.about-img{
+    width: 60%;
+    padding: 1rem;
+    height: 55%;
+}
+
+.image-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: beige;
+}
+
+.form-header{
+    font-size: 2rem;
+}
+
+.form-wrapper{
+    background-color: #a85e5e;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    align-self: flex-start;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+input{
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+textarea{
+    width: 100%;
+    padding: 1rem;
+}
+
+buttom{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: aquamarine;
+    color: lightslategrey;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.5;
+    color: #000;
+}
+
+
+footer{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.2);
+    height: 4rem;
+}
+
+footer p {
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+
+@media screen and (min-width:786px){
+    .home-nav ul{
+        width: 25%;
+    }
+
+    .about-section{
+        flex-direction: row;
+    }
+
+    .form-wrapper{
+        width: 45rem;
+        height: 40rem;
+        padding: 1.5rem 2rem;
+    }
+
+    @media screen and (min-width: 1200px){
+        .home-nav ul{
+            width: 20%;
+        }
+
+        .container h1{
+            line-height: 40%;
+            font-size: 10rem;
+        }
+        .container p{
+            width: 50%;
+            font-size: 5rem;
+            line-height: 43px;
+        }
+
+        .about-section{
+            padding: 2rem 7rem;
+        }
+        .contact-wrapper{
+            height: 90vh;  
+        }
+        .form-wrapper{
+            width: 50rem;
+            height: 45rem;
+            padding: 1.5rem;
+            
+        }
+    }
+
+
+
+}
+
+
+
+
